@@ -4,4 +4,4 @@ A Responsive Pricing Table!!!!
 
 
 
-task1-pricingtable-varshac.netlify.app
+https://task1-pricingtable-varshac.netlify.app
