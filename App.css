@@ -1,0 +1,128 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+
+*{
+  padding:0px;
+  font-family: 'Inter', sans-serif;
+  margin: 0px;
+}
+
+body{
+  background-image: linear-gradient(to left, #4a8df2, #2378f5, #0062f6, #0048f2, #1225eb);
+  display:grid;
+  justify-items: center;
+  height: 100vh;
+  align-items: center;
+  /* background-repeat: no-repeat; */
+}
+  
+
+
+.outerBox{
+  display: grid;   
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    padding:1rem;
+  
+}
+
+.subs{
+  opacity:0.4;
+  letter-spacing: 0.2rem;
+  font-size: 0.8rem;
+  padding-top:1.5rem;
+}
+span{
+  font-size: 2rem;
+  font-weight:bolder;
+}
+.innerBox{
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:1rem;
+  width:280px;  
+  line-height: 1.5rem;  
+  border-radius:20px;
+  height:480px;
+
+}
+.inner-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:15px;
+}
+.line{
+  margin-bottom:1rem;
+  border:1px solid grey;
+  width:80%;
+  
+}
+ul li{
+  padding:0.3rem;
+  list-style: none;
+  font-weight:550;
+}
+ul li::before{
+  content:"✔";
+  margin-right: 0.5rem;
+}
+.list-content li:nth-child(n+5){
+  opacity:0.5;
+}
+.list-content li:nth-child(n+5)::before{
+  content:"X";
+}
+
+.list2-content li:last-child{
+  opacity:0.5;
+}
+
+.list2-content li:last-child::before{
+  content:"X";
+}
+
+.bold-txt{
+  font-weight: bolder;
+}
+
+
+
+
+.button{
+  width:90%;
+  background:#0062f6;
+  border-radius:20px;
+  border:none;
+  color:honeydew;
+  letter-spacing: 0.2rem;
+  height: 8%;
+  opacity: 0.7;
+}
+
+button:hover{
+  opacity:1;
+}
+
+
+@media(min-width:980px)
+{
+  .outerBox{
+  
+      grid-template-columns: 1fr 1fr 1fr;
+    
+    
+  }
+
+  .innerBox:hover{
+    margin-top: -0.25rem;
+    margin-bottom: 0.25rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+    
+  }
+
+
+}
